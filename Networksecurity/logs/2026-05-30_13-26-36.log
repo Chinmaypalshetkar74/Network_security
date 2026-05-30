@@ -1,0 +1,9 @@
+[ 2026-05-30 13:26:38,947 ] 45 root - INFO - Starting Data Ingestion
+[ 2026-05-30 13:26:39,989 ] 136 root - INFO - Train/Test split completed
+[ 2026-05-30 13:26:39,989 ] 56 root - INFO - Data Ingestion Completed
+[ 2026-05-30 13:26:40,026 ] 75 root - INFO - Starting Data Validation
+[ 2026-05-30 13:26:40,135 ] 78 root - INFO - Required columns: 31
+[ 2026-05-30 13:26:40,135 ] 82 root - INFO - Available columns: 31
+[ 2026-05-30 13:26:40,135 ] 78 root - INFO - Required columns: 31
+[ 2026-05-30 13:26:40,135 ] 82 root - INFO - Available columns: 31
+[ 2026-05-30 13:26:40,284 ] 86 root - INFO - Data Validation Completed

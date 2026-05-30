@@ -27,8 +27,10 @@ class trainingPiplineConfig:
 
 class DataIngestionConfig:
 
-    def __init__(self,
-                 training_pipline_config: trainingPiplineConfig):
+    def __init__(
+        self,
+        training_pipline_config: trainingPiplineConfig
+    ):
 
         self.data_ingestion_dir = os.path.join(
             training_pipline_config.artifact_dir,
@@ -63,4 +65,53 @@ class DataIngestionConfig:
 
         self.database_name = (
             Training_pipeline.Data_Ingestion_Database_Name
+        )
+
+
+class DataValidationConfig:
+
+    def __init__(
+        self,
+        training_pipline_config: trainingPiplineConfig
+    ):
+
+        self.data_validation_dir = os.path.join(
+            training_pipline_config.artifact_dir,
+            Training_pipeline.Data_Validation_DIR_Name
+        )
+
+        self.valid_data_dir = os.path.join(
+            self.data_validation_dir,
+            Training_pipeline.Data_Validation_Valid_Dir
+        )
+
+        self.invalid_data_dir = os.path.join(
+            self.data_validation_dir,
+            Training_pipeline.Data_Validation_InValid_Dir
+        )
+
+        self.valid_train_file_path = os.path.join(
+            self.valid_data_dir,
+            Training_pipeline.Train_file_name
+        )
+
+        self.valid_test_file_path = os.path.join(
+            self.valid_data_dir,
+            Training_pipeline.Test_file_name
+        )
+
+        self.invalid_train_file_path = os.path.join(
+            self.invalid_data_dir,
+            Training_pipeline.Train_file_name
+        )
+
+        self.invalid_test_file_path = os.path.join(
+            self.invalid_data_dir,
+            Training_pipeline.Test_file_name
+        )
+
+        self.drift_report_file_path = os.path.join(
+            self.data_validation_dir,
+            Training_pipeline.Data_Validation_Drift_Report_Dir,
+            Training_pipeline.Data_Validation_Drift_Report_File_Name
         )
