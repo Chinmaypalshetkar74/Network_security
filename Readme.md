@@ -394,6 +394,23 @@ This project demonstrates hands-on expertise in:
 [![GitHub](https://img.shields.io/badge/GitHub-Chinmaypalshetkar74-181717?style=for-the-badge&logo=github)](https://github.com/Chinmaypalshetkar74)
 
 <br/>
+#### Guide resources -KrishAI Technologies - udemy Krish naik Mlops course
+
+<img width="1026" height="670" alt="image" src="https://github.com/user-attachments/assets/0ff58927-fd88-4aa9-ac71-34f96364acfd" />
+
+<img width="1012" height="601" alt="image" src="https://github.com/user-attachments/assets/b20d8989-1254-4195-b127-f92dad0e6b7c" />
+
+<img width="1020" height="630" alt="image" src="https://github.com/user-attachments/assets/3a5523f2-a9fb-4e11-9265-9df477049b47" />
+
+<img width="1913" height="1026" alt="image" src="https://github.com/user-attachments/assets/3b402311-1d61-45ea-adc8-dfb9c2302eed" />
+
+<img width="1919" height="1020" alt="Screenshot 2026-05-31 115551" src="https://github.com/user-attachments/assets/449aa660-f0ae-460e-989f-f1282bd3b473" />
+
+<img width="1919" height="1020" alt="Screenshot 2026-05-31 115551" src="https://github.com/user-attachments/assets/5ad70582-7bae-4ce2-af24-22827e3167b9" />
+
+<img width="1906" height="1024" alt="Screenshot 2026-05-31 122917" src="https://github.com/user-attachments/assets/b91bfd8b-a43e-4c60-a4a3-6a63d499b78c" /> 
+
+<img width="865" height="1021" alt="Screenshot 2026-05-31 195916" src="https://github.com/user-attachments/assets/6d483715-4150-4dee-87b4-474c1b26f3ed" />
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
 
