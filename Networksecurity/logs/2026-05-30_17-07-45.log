@@ -1,0 +1,13 @@
+[ 2026-05-30 17:07:47,788 ] 47 root - INFO - Starting Data Ingestion
+[ 2026-05-30 17:07:48,959 ] 136 root - INFO - Train/Test split completed
+[ 2026-05-30 17:07:48,960 ] 58 root - INFO - Data Ingestion Completed
+[ 2026-05-30 17:07:48,973 ] 77 root - INFO - Starting Data Validation
+[ 2026-05-30 17:07:49,088 ] 78 root - INFO - Required columns: 31
+[ 2026-05-30 17:07:49,088 ] 82 root - INFO - Available columns: 31
+[ 2026-05-30 17:07:49,088 ] 78 root - INFO - Required columns: 31
+[ 2026-05-30 17:07:49,089 ] 82 root - INFO - Available columns: 31
+[ 2026-05-30 17:07:49,258 ] 88 root - INFO - Data Validation Completed
+[ 2026-05-30 17:07:49,267 ] 107 root - INFO - Starting Data Transformation
+[ 2026-05-30 17:07:49,267 ] 97 root - INFO - Entered initiate_data_transformation method
+[ 2026-05-30 17:07:49,267 ] 103 root - INFO - Starting Data Transformation
+[ 2026-05-30 17:07:49,390 ] 67 root - INFO - Entered get_data_transformer_object method

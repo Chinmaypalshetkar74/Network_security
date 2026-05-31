@@ -1,0 +1,19 @@
+[ 2026-05-30 20:03:39,538 ] 52 root - INFO - Starting Data Ingestion
+[ 2026-05-30 20:03:40,715 ] 136 root - INFO - Train/Test split completed
+[ 2026-05-30 20:03:40,715 ] 75 root - INFO - Data Ingestion Completed
+[ 2026-05-30 20:03:40,715 ] 83 root - INFO - Starting Data Validation
+[ 2026-05-30 20:03:40,841 ] 78 root - INFO - Required columns: 31
+[ 2026-05-30 20:03:40,841 ] 82 root - INFO - Available columns: 31
+[ 2026-05-30 20:03:40,841 ] 78 root - INFO - Required columns: 31
+[ 2026-05-30 20:03:40,841 ] 82 root - INFO - Available columns: 31
+[ 2026-05-30 20:03:41,013 ] 107 root - INFO - Data Validation Completed
+[ 2026-05-30 20:03:41,022 ] 115 root - INFO - Starting Data Transformation
+[ 2026-05-30 20:03:41,022 ] 97 root - INFO - Entered initiate_data_transformation method
+[ 2026-05-30 20:03:41,022 ] 103 root - INFO - Starting Data Transformation
+[ 2026-05-30 20:03:41,149 ] 67 root - INFO - Entered get_data_transformer_object method
+[ 2026-05-30 20:03:41,149 ] 77 root - INFO - KNNImputer initialized with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-05-30 20:03:41,174 ] 51 root - INFO - Entered the save_object method of Main_utils class
+[ 2026-05-30 20:03:41,178 ] 231 root - INFO - Data Transformation Completed
+[ 2026-05-30 20:03:41,180 ] 141 root - INFO - Data Transformation Completed
+[ 2026-05-30 20:03:41,180 ] 149 root - INFO - Starting Model Training
+[ 2026-05-30 20:04:52,099 ] 60 root - INFO - Entered the load_object method of Main_utils class

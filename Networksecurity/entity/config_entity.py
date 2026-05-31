@@ -115,3 +115,68 @@ class DataValidationConfig:
             Training_pipeline.Data_Validation_Drift_Report_Dir,
             Training_pipeline.Data_Validation_Drift_Report_File_Name
         )
+
+class DataTransformationConfig:
+
+    def __init__(
+        self,
+        training_pipline_config: trainingPiplineConfig
+    ):
+
+        self.data_transformation_dir: str = os.path.join(
+            training_pipline_config.artifact_dir,
+            Training_pipeline.Data_Transformation_Dir_Name
+        )
+
+        self.transformed_data_dir: str = os.path.join(
+            self.data_transformation_dir,
+            Training_pipeline.Data_Transformation_Transformed_Data_Dir
+        )
+
+        self.transformed_train_file_path: str = os.path.join(
+            self.transformed_data_dir,
+            Training_pipeline.Train_file_name.replace(
+                ".csv",
+                ".npy"
+            )
+        )
+
+        self.transformed_test_file_path: str = os.path.join(
+            self.transformed_data_dir,
+            Training_pipeline.Test_file_name.replace(
+                ".csv",
+                ".npy"
+            )
+        )
+
+        self.transformed_object_file_path: str = os.path.join(
+            self.data_transformation_dir,
+            Training_pipeline.Preprocessing_Object_File_Name
+        )
+
+class ModelTrainerConfig:
+
+    def __init__(
+        self,
+        training_pipline_config: trainingPiplineConfig
+    ):
+
+        self.model_trainer_dir = os.path.join(
+            training_pipline_config.artifact_dir,
+            Training_pipeline.Model_Trainer_DIR_Name
+        )
+
+        self.trained_model_file_path = os.path.join(
+            self.model_trainer_dir,
+            Training_pipeline.Model_Trainer_Trained_Model_Dir,
+            Training_pipeline.Model_Trainer_Trained_Model_Name
+        )
+
+        self.expected_accuracy_score = (
+            Training_pipeline.Model_Trainer_Expected_Score
+        )
+
+        self.overfitting_underfitting_threshold = (
+            Training_pipeline
+            .Model_Trainer_Overfitting_Underfitting_Threshold
+        )
