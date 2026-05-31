@@ -394,7 +394,8 @@ This project demonstrates hands-on expertise in:
 [![GitHub](https://img.shields.io/badge/GitHub-Chinmaypalshetkar74-181717?style=for-the-badge&logo=github)](https://github.com/Chinmaypalshetkar74)
 
 <br/>
-#### Guide resources -KrishAI Technologies - udemy Krish naik Mlops course
+
+## Guide resources -KrishAI Technologies - udemy Krish naik Mlops course
 
 <img width="1026" height="670" alt="image" src="https://github.com/user-attachments/assets/0ff58927-fd88-4aa9-ac71-34f96364acfd" />
 
