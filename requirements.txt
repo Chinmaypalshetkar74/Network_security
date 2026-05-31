@@ -9,5 +9,8 @@ scikit-learn
 mlflow
 dill
 pyaml
+dagshub
+fastapi
+unicorn
 
 ##-e .

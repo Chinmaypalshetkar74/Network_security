@@ -4,6 +4,10 @@ import sys
 from Networksecurity.Exception.exception import NetworkSecurityException
 
 import mlflow
+import dagshub
+dagshub.init(repo_owner='Chinmaypalshetkar74', repo_name='Network_security', mlflow=True)
+
+
 from Networksecurity.Logging.logger import logging
 from Networksecurity.entity.config_entity import ModelTrainerConfig
 from Networksecurity.entity.artifact_entity import (
@@ -270,6 +274,10 @@ class ModelTrainer:
                 obj=
                 network_security_model
             )
+
+            save_object(
+                "Final_models/model.pkl",best_model
+                )
 
             model_trainer_artifact = (
                 ModelTrainerArtifact(
