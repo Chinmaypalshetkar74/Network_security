@@ -3,6 +3,7 @@ import sys
 
 from Networksecurity.Exception.exception import NetworkSecurityException
 
+import mlflow
 from Networksecurity.Logging.logger import logging
 from Networksecurity.entity.config_entity import ModelTrainerConfig
 from Networksecurity.entity.artifact_entity import (
@@ -53,7 +54,18 @@ class ModelTrainer:
                 e,
                 sys
             )
+        
+    def track_mlflow(self, best_model, classificationmetric):
+        with mlflow.start_run():
+            f1_score = classificationmetric.f1_score
+            precision_score = classificationmetric.precision_score
+            recall_score = classificationmetric.recall_score
 
+            mlflow.log_metric("f1_score", f1_score)
+            mlflow.log_metric("precision_score", precision_score)
+            mlflow.log_metric("recall_score", recall_score)
+            mlflow.sklearn.log_model(best_model , "model")
+            
     def train_model(
         self,
         x_train,
@@ -196,6 +208,16 @@ class ModelTrainer:
                 )
             )
 
+            #Track the mlflow experiment
+            self.track_mlflow(best_model, classification_train_metric)
+
+
+
+
+
+
+
+
             y_test_pred = (
                 best_model.predict(
                     x_test
@@ -208,6 +230,9 @@ class ModelTrainer:
                     y_pred=y_test_pred
                 )
             )
+
+            self.track_mlflow(best_model, classification_test_metric)
+
 
             preprocessing_obj = load_object(
             file_path=
